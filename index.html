@@ -9,7 +9,8 @@
 
 <body style="margin: 0px;overflow: hidden;">
     <a-scene embedded arjs="sourceType:webcam;debugUIEnabled: false;">
-        <a-assets>
+        <a-text value="Hello, World!"></a-text>
+		<a-assets>
             <a-asset-item id="cake" src="./model.gltf"></a-asset-item>
         </a-assets>
         <a-marker-camera preset="hiro">
@@ -19,8 +20,9 @@
             <!-- <a-entity text="value: Happy Birthday Kajal" material="color: red; src: #texture"></a-entity> -->
             <a-entity text-geometry="value: Happy Birthday Kajal"></a-entity>
             <a-entity gltf-model="#cake"></a-entity>
-        </a-marker-camera>
+        </a-marker-camera>		
     </a-scene>
 </body>
 
 </html>
+
